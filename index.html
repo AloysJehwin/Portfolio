@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal_portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/08f769bc44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Aloys.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Learning Java OOPs</p>
+                <h1>Hi, I'm <SPAN>Aloys</SPAN><br>Jehwin from India</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <!--- ----------about----------- --->
+    <div id="about"> 
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate and driven individual with a love for innovation and creativity. I thrive on challenges, constantly seeking opportunities for growth. Whether in coding or communication, I am dedicated to making a positive impact.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Tamizh(Software Developer)</span><br>Interned at TAMIZH as a software and hardware developer, gaining experience in Embedded C for systems programming and Unity for VR application development.</li>
+                            <li><span>PanIIT Submit(App Developer)</span><br>Developed a healthcare app, AURA, for the PANIIT summit using Java and object-oriented programming principles to provide efficient health management solutions.</li>
+                            <li><span>AVSAR(Backend Developer)</span><br>Developed a headband for dual sensory loss individuals using Raspberry Pi and a control unit, along with an accompanying app, as part of the AVSAR project.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>10th (87.3%)</span><br>SAV Balakrishna Mat Hr Sec School</li>
+                            <li><span>12th (85.5%)</span><br>SAV Balakrishna Mat Hr Sec School</li>
+                            <li><span>BE(Electronics and Communication) (7.8/10CGPA)</span><br>Loyola ICAM college of Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Programming Skills</span><br>C, Java, Embedded, Verilog VHDL</li>
+                            <li><span>Java OOP Developer</span><br>Developing object-oriented application</li>
+                            <li><span>API/Cloud</span><br>Developing backend functions</li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Java OOPs</h2>
+                    <p>An experienced Java developer specializing in object-oriented programming (OOP), with a strong background in designing scalable applications, including healthcare apps and library management systems. Proficient in Java collections, data structures, and problem-solving, delivering efficient and maintainable code solutions.</p>
+                    <a href="https://github.com/AloysJehwin/Daily-Water">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>API/Cloud</h2>
+                    <p>A skilled API and cloud interface developer with experience in designing and implementing robust APIs and managing cloud services. Proficient in integrating applications with various cloud platforms, optimizing performance, and ensuring secure, scalable solutions.</p>
+                    <a href="https://github.com/AloysJehwin/Sense-IT-Application">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-webflow"></i>
+                    <h2>ML Model</h2>
+                    <p>A proficient ML model developer with experience in creating and deploying machine learning models, including time series forecasting. Skilled in designing algorithms for predictive analytics, optimizing model performance, and applying techniques for accurate, scalable solutions.</p>
+                    <a href="https://github.com/AloysJehwin/Vision">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/1000_F_355890167_rE8bF0wBeElb2AEhje0CYqSRUVJ8AAdr.jpg">
+                    <div class="layer">
+                        <h3>VISION(Pu Code hackathon)</h3>
+                        <p>Experienced in centralized CCTV surveillance systems, focusing on live video enhancement, real-time monitoring, and detecting illegal movements and violence. Implemented solutions for alerting the relevant authorities to ensure timely responses and improve security.</p>
+                        <a href="https://github.com/AloysJehwin/Vision"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/stock-vector-pipeline-for-various-purposes-city-engineering-network-underground-part-of-system-isolated-2016298172.jpg">
+                    <div class="layer">
+                        <h3>MIRA(Socio Tech hackathon)</h3>
+                        <p>MIRA is a centralized app for monitoring Coimbatore's water supply network, focusing on detecting leaks and inefficiencies. It ensures real-time reporting and management, enhancing the overall effectiveness and reliability of the water distribution system.</p>
+                        <a href="https://github.com/AloysJehwin/MIRA-web"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/disabled-people-set-men-women-600nw-1667798803.png">
+                    <div class="layer">
+                        <h3>Sense'IT(AVSAR hackathon)</h3>
+                        <p>Sense’it is a headband for people with dual sensory loss, scanning the environment and translating it into tactile feedback, enabling real-time environmental awareness through vibrations and tactile cues.</p>
+                        <a href="https://github.com/AloysJehwin/Sense-It-web"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/AloysJehwin" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ------------conatact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope-open"></i> aloysjehwin@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9489254099</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aloys-jehwin-83b904233/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AloysJehwin"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Aloys Jehwin_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwFElpdrL-Sa43soGtaoWI6NafcnQlDzv0T2TJvjmiQl9oyfitYgDDVCYIGH3qfEkB54w/exec';
+        const form = document.forms['submit-to-google-sheet'];
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault();  // Prevent default form submission
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => {
+                console.log('Success!', response);
+                document.getElementById('msg').innerText = 'Message sent successfully!';
+                form.reset();  // Clear the form after submission
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                document.getElementById('msg').innerText = 'Error sending message.';
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
