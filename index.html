@@ -19,9 +19,11 @@
                     <li><a href="#services">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    <!-- Close icon -->
+                    <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <!-- Menu icon -->
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Learning Java OOPs</p>
@@ -30,6 +32,7 @@
         </div>
     </div>
 </body>
+
 
     <!--- ----------about----------- --->
     <div id="about"> 
@@ -143,7 +146,7 @@
                         <a href="https://www.linkedin.com/in/aloys-jehwin-83b904233/"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/AloysJehwin"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <a href="Aloys Jehwin_Resume.pdf" download class="btn btn2">Download CV</a>
+                    <a href="Aloys Jehwin.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -199,6 +202,16 @@
             event.currentTarget.classList.add("active-link");
         }
     </script>
+    <script>
+        function openmenu() {
+            document.getElementById("sidemenu").style.right = "0";
+        }
+    
+        function closemenu() {
+            document.getElementById("sidemenu").style.right = "-200px";
+        }
+    </script>
+    
     
     
     

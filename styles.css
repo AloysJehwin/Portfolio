@@ -323,30 +323,35 @@ form .btn2{
     cursor: pointer;
 }
 /* -------------css for small screen--------- */
-nav .fa-solid{
+/* Default menu icon hidden */
+nav .fas {
     display: none;
 }
-@media only screen and (max-width:600px){
-    #header{
+
+/* Media query for mobile view */
+@media only screen and (max-width: 600px) {
+    #header {
         background-image: url(images/download.gif);
     }
-    #header img{
+    #header img {
         width: 30%;
         height: 30%;
     }
-    .header-text{
-        margin-top: 150%;
+    .header-text {
+        margin-top: 100%;
         font-size: 16px;
-
     }
-    .header-text h1{
+    .header-text h1 {
         font-size: 30px;
     }
-    nav .fa-solid{
+    /* Show the menu icon */
+    nav .fas {
         display: block;
         font-size: 25px;
+        cursor: pointer;
     }
-    nav ul{
+    /* Styling for the side menu */
+    nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
@@ -355,45 +360,42 @@ nav .fa-solid{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;
-
-
+        transition: right 0.5s ease;
     }
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 25px;
-
     }
-    nav ul .fa-solid{
+    nav ul .fas {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
-
     }
-    .sub-title{
+    /* Other styles */
+    .sub-title {
         font-size: 40px;
-
     }
-    .about-col-1, .about-col-2{
+    .about-col-1, .about-col-2 {
         flex-basis: 100%;
     }
-    .about-col-1{
+    .about-col-1 {
         margin-bottom: 30px;
     }
-    .about-col-2{
+    .about-col-2 {
         font-size: 14px;
     }
-    .tab-links{
+    .tab-links {
         font-size: 16px;
         margin-right: 20px;
-
     }
-    .contact-left,.contact-right{
+    .contact-left, .contact-right {
         flex-basis: 100%;
     }
 }
-#msg{
+
+/* Success message styling */
+#msg {
     color: #61b752;
     margin-top: -40px;
     display: block;
