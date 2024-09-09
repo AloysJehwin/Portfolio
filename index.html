@@ -16,7 +16,7 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.jpg" >
+                    <img src="images/user.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -67,11 +67,11 @@
                             <li><span>API/Cloud</span><br>Developing backend functions</li>
                         </ul>
                     </div>
-                
                 </div>
             </div>
         </div>
     </div>
+    
     <!-- ------------services------------- -->
     <div id="services">
         <div class="container">
@@ -179,6 +179,27 @@
             });
         });
     </script>
+
+    <script>
+        function opentab(tabName) {
+            // Get all elements with class="tab-contents" and hide them
+            var tabContents = document.getElementsByClassName("tab-contents");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active-tab");
+            }
+    
+            // Get all elements with class="tab-links" and remove the class "active-link"
+            var tabLinks = document.getElementsByClassName("tab-links");
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active-link");
+            }
+    
+            // Show the current tab and add an "active" class to the clicked link
+            document.getElementById(tabName).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+    
     
     
 </body>
