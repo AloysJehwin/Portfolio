@@ -331,8 +331,8 @@ nav .fa-solid{
         background-image: url(images/download.gif);
     }
     #header img{
-        width: 100%;
-        height: 100%;
+        width: 30%;
+        height: 30%;
     }
     .header-text{
         margin-top: 150%;
